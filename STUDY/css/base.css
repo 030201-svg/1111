@@ -1,0 +1,23 @@
+/* 基础样式：清除默认样式 + 设置通用样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 移除列表项前的默认圆点或编号，使列表看起来更干净。 */
+li {
+  list-style: none;
+}
+
+/* 设置字体大小为14px，行高为1.5倍（即21px），字体族优先使用微软雅黑（Microsoft YaHei），如果不支持则使用无衬线字体（sans-serif），再依次尝试黑体简体（Heiti SC）和微软雅黑UI */
+body{
+    font : 14px/1.5 "Microsoft YaHei", sans-serif,"Heiti SC",  "Microsoft YaHei UI";
+    color: #333;
+}
+
+
+a {
+  text-decoration: none;
+  color:none;
+}

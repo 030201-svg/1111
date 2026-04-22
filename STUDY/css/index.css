@@ -1,0 +1,335 @@
+
+/* 首页样式：版心 */
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f3f5f7;
+}
+
+/* 头部区域 */
+.header {
+  height: 100px;
+  background-color: #fff;
+}
+
+.header .wrapper{
+  padding-top: 29px;
+  display: flex;
+}
+
+/* logo区域 */
+.logo a{
+  width: 60px;
+  height: 60px;
+  margin-left: 100px;
+  padding-top: 10px;
+  background-image: url("../images/mc.avif");
+  border-radius: 50%;
+  
+  
+  
+  /* 完全显示图片 */
+  background-size: contain;
+  font-size: 0;
+  flex: auto;
+  /* 把元素变成块级元素 */
+  display: block;
+}
+
+/* 导航区域 */
+.nav {
+  margin-left: 120px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+.nav ul li {
+  margin-right: 32px;
+  
+}
+
+.nav li a {
+  display: inline-block;
+  width: 100px;
+  padding: 8px 8px;
+  /* 设置行高：即行间距 */
+  line-height: 27px;
+  font-size: 17px;
+};
+
+/* 搜索区域 */
+.search {
+  margin-left: 64px;
+  margin-right: 12px;
+  padding-left: 19px;
+  width: 412px;
+  height: 40px;
+  background-color: #f3f5f7;
+  border-radius: 20px;
+}
+
+
+.search input {
+  flex: 1;
+  border: 0;
+  background-color: transparent;
+  padding-left: 4px;
+  font-size: 14px;
+  outline: none;
+  margin-top: 12px;
+}
+ 
+.search input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.search .search-btn {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  background-color: #f3f5f7;
+  border: none;
+  color: rgb(94, 187, 199);
+  display: inline-block;
+  text-align: right;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.user a {
+    display: flex;
+    color: #333;
+    flex-direction: column;
+}
+
+.user a p {
+    display: block;
+    font-size: 12px;
+
+}
+
+.banner{
+    height: 420px;
+    background-color: #0092cb;
+}
+
+.banner .wrapper{
+    height: 420px;
+    width: 1068px;
+    background-image: url(../images/2.4.jpg);
+    background-size: contain;
+    background-position: left 90px center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 侧导航区域写样式 */
+.banner .left {
+    padding: 3px 20px;
+    height: 420px;
+    background-color: #0f668b;
+}
+
+.banner .left a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: #ffffff;
+}
+
+.banner .left a:hover {
+    background-color: #0f668b;
+    color: #fa9898;
+    font-weight: bold;
+    
+}
+
+/* 经典曲目 */
+.banner .right {
+    width: 230px;
+    background-color:#88e9ff ;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.banner .right h3 {
+    margin-left: 80px;
+    display: flex;
+    color: #333;
+    width: 230px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.banner .right .content {
+    background-color: #ffffff;
+    height: 380px;
+    width: 230px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    flex: auto;
+
+}
+
+.banner .right .content dl {
+    border-bottom: 1px solid #6cb3fb;
+    margin-top: 10px;
+}
+
+.banner .right .content dt{
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: auto;
+}
+
+.banner .right .content span {
+    color: #0080ff;
+    font-size: 14px;
+}
+
+.banner .right .content .x{
+    align-items: center;
+}
+
+.banner .right .content a{
+  display: block;
+  color: #ffffff;
+  margin-left: 25px;
+  margin-top: 14px;
+  font-size: 16px;
+  height: 30px;
+  width: 180px;
+  text-align: center;
+  background-color: rgb(80, 227, 232);
+  border-radius: 20px;
+}
+
+/* 推荐区域 */
+.recommend {
+    height: 60px;
+    background-color: #fff;
+    margin-top: 11px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 0 20px;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+    line-height: 60px;
+    display: flex;
+}
+
+/* 设置h3标签 */
+.recommend h3{
+    font-size: 18px;
+    color: #0ae0fd;
+    font-weight: 400;
+}
+
+/* 设置弹性收缩比，使元素在容器内均匀分布 */
+.recommend ul {
+    display: flex;
+    flex: 1;
+    text-align: auto;
+}
+
+.recommend ul li a {
+    display: flex;
+    border-right: 1px solid #e0e0e0;
+    padding:0 21px;
+}
+
+.recommend .modify {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    padding: 20px 20px;
+    color: #12cabb;
+}
+
+.course{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.hd {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+}
+
+.hd h3 {
+    font-size: 16px;
+    color: #00b8ac;
+    font-weight: 400;
+}
+
+.hd .more{
+  color: #999;
+  font-size: 14px;
+}
+
+.bd ul{
+  display: flex;
+  /* 开启换行模式 */
+  flex-wrap: wrap;
+  /* 设置子元素在主轴上的对齐方式 */
+  justify-content: space-between;
+}
+
+.bd li{
+  display: block;
+  margin-bottom: 14px;
+  width: 227px;
+  height: 220px;
+  background-color: white;
+}
+
+.bd li .pic{
+  width: 227px;
+  height: 127.69px;
+}
+
+.bd li img{
+  width: 227px;
+  height: auto;
+  background-size: cover;
+}
+
+.bd li .text{
+  height: 95px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.bd li .text h4{
+  margin-bottom: 10px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: 400;
+  color: #00668f;
+}
+
+.bd li .text p{
+  font-size: 12px;
+  color: #999;
+  line-height: 20px;
+}
+
+.bd li .text p span{
+  color: #ff922d;
+}
